@@ -1,62 +1,51 @@
 # 📈 Stock Market Analysis
 
-This project explores and analyzes stock market trends using historical data from **Yahoo Finance**. It includes visualizations, key metrics, and insights to help understand stock behavior over time for selected companies.
-
 ## 📌 Overview
 
-The aim of this project is to:
+This project performs end-to-end stock market analysis using historical data from **Yahoo Finance**. It answers key financial questions using **Python**, and explores price trends, returns, volatility, and risk using real-world data. The final section includes a basic **LSTM model to predict Apple's closing stock price**.
 
-* Analyze historical stock data for selected companies
-* Perform time series visualizations of Open, Close, High, Low prices
-* Compare stock performance across different companies
-* Draw insights about trends, volatility, and correlations
+## 🎯 Objectives
 
-## 📊 Tools & Technologies
+- Understand historical stock trends and movements
+- Calculate daily returns and risk (VaR)
+- Analyze correlation between major companies
+- Predict future prices using deep learning
 
-* **Python**
-* **Pandas** for data manipulation
-* **NumPy** for numerical computations
-* **Matplotlib** and **Seaborn** for data visualization
-* **yfinance** for fetching historical stock data
-* **Jupyter Notebook** for analysis
+## 🛠️ Technologies Used
 
-## 🔍 Features
+- **Python**, **Jupyter Notebook**
+- **yFinance**, **Pandas**, **NumPy**
+- **Matplotlib**, **Seaborn**
+- **TensorFlow / Keras** for LSTM model
 
-* Fetches real-time data using `yfinance`
-* Displays key statistics: Open, Close, High, Low, Volume
-* Time-series line plots for visualizing price movement
-* Comparative analysis between different companies
-* Moving Average calculation and visualization
+## 📊 Companies Analyzed
+
+- Apple (AAPL)
+- Microsoft (MSFT)
+- Google (GOOG)
+- Amazon (AMZN)
+
+## 📈 Key Topics Covered
+
+- Stock price visualization
+- Daily percentage returns
+- Moving averages
+- Correlation heatmaps and pair plots
+- Value at Risk (Historical VaR method)
+- LSTM-based price prediction model
+
+## 🧠 LSTM Forecasting
+
+A basic deep learning model was built using **LSTM (Long Short-Term Memory)** networks to predict Apple’s stock closing prices. This section includes:
+- Data scaling and reshaping
+- Model architecture with Keras
+- Training and testing on time series
+- Evaluation and prediction plots
+
+## 🔮 Future Improvements
+
+- Add technical indicators (MACD, RSI, Bollinger Bands)
+- Improve LSTM model accuracy and tuning
+- Streamlit-based dashboard for real-time interaction
 
 
-## 📌 How to Run
-
-1. Clone the repository:
-
-   ```bash
-   git clone https://github.com/DiptiWaghmare/Stock_Market_Analysis.git
-   cd Stock_Market_Analysis
-   ```
-2. Install dependencies:
-
-   ```bash
-   pip install yfinance pandas matplotlib seaborn
-   ```
-3. Run the notebook:
-
-   ```bash
-   jupyter notebook
-   ```
-   
-
-## 💡 Insights
-
-* Stocks tend to show strong trends over longer durations.
-* Moving averages help identify entry/exit points.
-* Volume spikes often signal volatility or trend shifts.
-
-## 🧠 Future Scope
-
-* Add forecasting models (ARIMA, Prophet, LSTM)
-* Integrate technical indicators (MACD, RSI, Bollinger Bands)
-* Build a Streamlit or Dash app for interactive dashboards
